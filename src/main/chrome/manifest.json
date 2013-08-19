@@ -5,8 +5,8 @@
   "description": "Please describe your Chrome Webapp.",
   "version": "0.0.3",
   "icons": {
-    "24": "images/gwt-24.jpg",
-    "128": "images/gwt-128.png"
+    "24": "img/gwt-24.jpg",
+    "128": "img/gwt-128.png"
   },
   "app": {
     "launch": {
@@ -18,5 +18,12 @@
   
   "permissions": [
     "notifications"
+  ],
+  
+  
+    // Note: Because of bug 134315, you must declare any images you
+  // want to use with createNotification() as a web accessible resource.
+  "web_accessible_resources": [
+    "img/star-48.png"
   ]
 }

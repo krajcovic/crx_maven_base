@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <title>helloworld HTML5 Chrome Webapp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet"
+	media="screen">
+
+<!-- Notify CSS -->
+<link href="css/bootstrap-notify.css" rel="stylesheet">
+
 <style>
 body {
 	font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
@@ -15,6 +24,7 @@ body {
 	top: 0px;
 }
 </style>
+
 </head>
 
 <body>
@@ -22,20 +32,28 @@ body {
 
 	<hr />
 	<script type="text/javascript">
-		// Create a simple text notification:
-		var notification = webkitNotifications.createNotification(
-				'images/star-48.png', // icon url - can be relative
-				'Hello!', // notification title
-				'Lorem ipsum...' // notification body text
-		);
+	   
+	/* 	if (window.webkitNotifications) {
+			console.log("Notifications are supported!");
 
-		// Or create an HTML notification:
-		var notificationHtml = webkitNotifications
-				.createHTMLNotification('notification.html' // html url - can be relative
-				);
+			// Create a simple text notification:
+			var notification = webkitNotifications.createNotification(
+					'img/star-48.png', // icon url - can be relative
+					'Hello!', // notification title
+					'Lorem ipsum...' // notification body text
+			);
 
-		// Then show the notification.
-		//notification.show();
+			// Or create an HTML notification:
+			var notificationHtml = webkitNotifications
+					.createHTMLNotification('notification.html' // html url - can be relative
+					);
+
+			// Then show the notification.
+			//notification.show();
+		} else {
+			console
+					.log("Notifications are not supported for this Browser/OS version yet.");
+		} */
 	</script>
 
 	<input type="button" onclick="notification.show()"
@@ -44,5 +62,9 @@ body {
 	<input type="button" onclick="notificationHtml.show()"
 		value="launch notification.html" />
 
+	<div class='notifications top-left'></div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
