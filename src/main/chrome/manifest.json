@@ -1,4 +1,6 @@
 {
+  "manifest_version": 2,
+
   "name": "helloworld",
   "description": "Please describe your Chrome Webapp.",
   "version": "1",

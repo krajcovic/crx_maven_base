@@ -18,6 +18,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
 				<configuration></configuration>
 				<executions>
 					<execution>
@@ -31,12 +32,10 @@
 			</plugin>
 			<!-- be sure to create your key and cert files, see crx-maven-plugin docs -->
 			<plugin>
-				<groupId>com.btmatthews.maven.plugins</groupId>
-				<artifactId>crx-maven-plugin</artifactId>
+                <groupId>com.btmatthews.maven.plugins</groupId>
+                <artifactId>crx-maven-plugin</artifactId>
 				<version>1.2.0</version>
 				<extensions>true</extensions>
-				<!-- <configuration> <pemKey>${chrome-webapp.key}</pemKey> <pemCert>${chrome-webapp.cert}</pemCert> 
-					</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
