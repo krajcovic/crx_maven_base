@@ -3,7 +3,7 @@
 
   "name": "helloworld",
   "description": "Please describe your Chrome Webapp.",
-  "version": "1",
+  "version": "0.0.3",
   "icons": {
     "24": "images/gwt-24.jpg",
     "128": "images/gwt-128.png"
