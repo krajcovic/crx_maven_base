@@ -31,14 +31,12 @@
 			</plugin>
 			<!-- be sure to create your key and cert files, see crx-maven-plugin docs -->
 			<plugin>
-				<groupId>com.google.code</groupId>
+				<groupId>com.btmatthews.maven.plugins</groupId>
 				<artifactId>crx-maven-plugin</artifactId>
-				<version>1.2.0-SNAPSHOT</version>
+				<version>1.2.0</version>
 				<extensions>true</extensions>
-<!-- 				<configuration>
-					<pemKey>${chrome-webapp.key}</pemKey>
-					<pemCert>${chrome-webapp.cert}</pemCert>
-				</configuration> -->
+				<!-- <configuration> <pemKey>${chrome-webapp.key}</pemKey> <pemCert>${chrome-webapp.cert}</pemCert> 
+					</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
